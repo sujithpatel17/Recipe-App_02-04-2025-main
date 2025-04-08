@@ -11,7 +11,7 @@ export const Home = () => {
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
-        const response = await axios.get("https://recipe-app-kh93.onrender.com/recipes");
+        const response = await axios.get("https://recipe-app-3b9u.onrender.com/recipes");
         setRecipes(response.data);
       } catch (err) {
         console.log(err);
@@ -35,7 +35,7 @@ export const Home = () => {
 
   const saveRecipe = async (recipeID) => {
     try {
-      const response = await axios.put("https://recipe-app-kh93.onrender.com/recipes", {
+      const response = await axios.put("https://recipe-app-3b9u.onrender.com/recipes", {
         recipeID,
         userID,
       });
